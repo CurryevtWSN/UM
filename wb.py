@@ -16,7 +16,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 st.set_page_config(page_title='Uveal Melanoma Distant Metastasis Prediction System - A Machine Learning-Based Study')
 st.title('Uveal Melanoma Distant Metastasis Prediction System - A Machine Learning-Based Study')
 
-#%%set varixgbles selection
+#%%set variables selection
 st.sidebar.markdown('## Varixgbles')
 Grade_Recode =  st.sidebar.selectbox("Grade recode",('Grade I','Grade II','Grade III',"Grade IV"),index=0)
 Diagnostic_Confirmation = st.sidebar.selectbox("Diagnostic confirmation methods",
@@ -38,7 +38,7 @@ Total_number_of_malignant_tumors = st.sidebar.slider("Total number of malignant 
 st.sidebar.markdown('#  ')
 st.sidebar.markdown('#  ')
 st.sidebar.markdown('##### All rights reserved') 
-st.sidebar.markdown('##### For communication and cooperation, please contact wshinana99@163.com, Wu Shi-Nan, Nanchang university')
+st.sidebar.markdown('##### For communication and cooperation, please contact wshinana99@163.com, Wu Shi-Nan, Xiamen university')
 #传入数据
 map = {'< 20 years':0,
        '20-40 years':1,
