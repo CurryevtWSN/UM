@@ -7,9 +7,7 @@ import seaborn as sns
 import shap
 import sklearn
 import joblib
-from xgboost.sklearn import XGBClassifier
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-from imblearn.over_sampling import SMOTE
 
 #%%不提示warning信息
 st.set_option('deprecation.showPyplotGlobalUse', False)
@@ -76,10 +74,10 @@ Rural_Urban_Continuum_Code = map[Rural_Urban_Continuum_Code]
 Radiation_recode = map[Radiation_recode]
 # 数据读取，特征标注
 #%%load model
-mlp_model = joblib.load(r'H:\吴世楠厦门大学研究生文件夹\研究生课题\SEER\结膜黑色素瘤\Figure\mlp_model.pkl')
+mlp_model = joblib.load('mlp_model.pkl')
 
 #%%load data
-hp_train = pd.read_csv(r'H:\吴世楠厦门大学研究生文件夹\研究生课题\SEER\结膜黑色素瘤\Figure\oversampled_data.csv')
+hp_train = pd.read_csv('oversampled_data.csv')
 features = ['Grade_Recode',
             'Diagnostic_Confirmation',
             'Primary_Site',
