@@ -17,7 +17,7 @@ st.set_page_config(page_title='Uveal Melanoma Distant Metastasis Prediction Syst
 st.title('Uveal Melanoma Distant Metastasis Prediction System - A Machine Learning-Based Study')
 
 #%%set variables selection
-st.sidebar.markdown('## Variables')
+st.sidebar.markdown('## Variables Selection')
 Grade_Recode =  st.sidebar.selectbox("Grade recode",('Grade I','Grade II','Grade III',"Grade IV"),index=0)
 Diagnostic_Confirmation = st.sidebar.selectbox("Diagnostic confirmation methods",
                                                ('Positive histology',
