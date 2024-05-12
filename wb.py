@@ -13,8 +13,8 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 #%%set title
-st.set_page_config(page_title='Uveal Melanoma Distant Metastasis Prediction System - A Machine Learning-Based Study')
-st.title('Uveal Melanoma Distant Metastasis Prediction System - A Machine Learning-Based Study')
+st.set_page_config(page_title='Uveal Melanoma Distant Metastasis Prediction System - A Retrospective Observational Study Based on Machine Learning')
+st.title('Uveal Melanoma Distant Metastasis Prediction System - A Retrospective Observational Study Based on Machine Learning')
 
 #%%set variables selection
 st.sidebar.markdown('## Variables Selection')
